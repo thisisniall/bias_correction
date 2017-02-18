@@ -2,6 +2,7 @@ import random
 import re as re
 import csv
 
+
 ### Zip codes
 
 f = open('us_postal_codes.csv')
@@ -43,14 +44,12 @@ list_of_domains_2 = ['@whitehouse.gov', '@horizon.net', '@aresmacrotech.com', '@
 
 def pick_domain():
     if random.randint(0,100) >= 90:
-        return list_of_domains_2[random.randint(0,len(list_of_domains_2))]
+        return list_of_domains_2[random.randint(0,len(list_of_domains_2) - 1)]
     else:
-        return list_of_domains_1[random.randint(0,len(list_of_domains_1))]
+        return list_of_domains_1[random.randint(0,len(list_of_domains_1) - 1)]
 
 def personal_info():
     person = str(first_names[random.randint(0,len(surnames))]+ ' ' + surnames[random.randint(0,len(surnames))])
     number = str(random.randint(0,1000))
     domain = pick_domain()
     return [person, person.replace(' ','.').lower()+number+domain, zipcode()]
-
-print personal_info()
