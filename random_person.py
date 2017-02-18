@@ -2,6 +2,7 @@ import random
 import re as re
 import csv
 
+
 ### Zip codes
 
 f = open('us_postal_codes.csv')
@@ -52,5 +53,3 @@ def personal_info():
     number = str(random.randint(0,1000))
     domain = pick_domain()
     return [person, person.replace(' ','.').lower()+number+domain, zipcode()]
-
-print personal_info()
