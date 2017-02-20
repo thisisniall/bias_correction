@@ -1,6 +1,8 @@
 # bias_correction
 encouraging less ridiculously biased poll design
 
+Donald Trump's [Media Accountability Survey](https://action.donaldjtrump.com/mainstream-media-accountability-survey/) is an example of really terrible survey design. In protest of how terribly biased the survey design is, we're correcting the results. Partially. You can only do so much when the survey is *this* bad. 
+
 ## Pre-requisites
 
 1) Python (works in 3.0)
